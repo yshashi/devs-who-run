@@ -15,7 +15,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@devs-who-run-vue/home": ["apps/libs/home/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
