@@ -1,7 +1,21 @@
 <script setup lang="ts">
 import NxWelcome from './NxWelcome.vue';
+import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <NxWelcome title="devs-who-run-vue" />
+  <header>
+
+    <div class="wrapper">
+      <HelloWorld msg="You did it!" />
+
+      <nav>
+        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/about">About</RouterLink>
+      </nav>
+    </div>
+  </header>
+
+  <RouterView />
+
 </template>
