@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-
 import Welcome from './NxWelcome.vue';
 
 const router = createRouter({
