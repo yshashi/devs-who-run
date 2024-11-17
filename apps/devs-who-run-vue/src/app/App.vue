@@ -49,7 +49,7 @@
   <footer>
     <p>© 2024 Devs Who Run. All rights reserved.</p>
     <p>
-      Made with passion of running by <a href="https://bsky.app/profile/santoshyadavdev.bsky.social">Santosh Yadav</a>
+      Made with passion for running by <a href="https://bsky.app/profile/santoshyadavdev.bsky.social">Santosh Yadav</a>
     </p>
   </footer>
 
