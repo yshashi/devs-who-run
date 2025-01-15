@@ -41,7 +41,6 @@ const testimonials = [
               :src="testimonial.avatar"
               :alt="`${testimonial.author}'s avatar`"
               class="w-12 h-12 rounded-full"
-              @error="e => e.target.src = '/default-avatar.png'"
               loading="lazy"
             >
             <div class="ml-4">

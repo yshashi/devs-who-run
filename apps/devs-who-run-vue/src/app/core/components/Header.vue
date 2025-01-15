@@ -25,7 +25,7 @@
             aria-label="Join Our Discord Community (opens in new tab)"
           >
             Join Discord
-            <i class="fa-brands fa-discord"></i>
+            <i class="fa-brands fa-discord" />
           </a>
           <a
             href="https://github.com/Devs-Who-Run/devs-who-run"

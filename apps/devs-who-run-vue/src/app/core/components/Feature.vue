@@ -31,9 +31,11 @@ const features = [
           Community Features
         </h2>
       </div>
-      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4"
-          role="list"
-          aria-label="Community features">
+      <div
+        class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4"
+        role="list"
+        aria-label="Community features"
+      >
         <div
           v-for="feature in features"
           :key="feature.title"

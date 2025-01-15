@@ -48,7 +48,7 @@
                 href="https://discord.gg/gjPdvKjFx3"
                 class="inline-flex gap-1 items-center transition-colors hover:text-white"
               >Discord
-                <i class="fa-brands fa-discord"></i>
+                <i class="fa-brands fa-discord" />
               </a>
             </li>
             <li>
@@ -56,7 +56,7 @@
                 href="https://github.com/Devs-Who-Run/devs-who-run"
                 class="inline-flex gap-1 items-center transition-colors hover:text-white"
               >GitHub
-                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-github" />
               </a>
             </li>
           </ul>
