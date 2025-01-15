@@ -37,7 +37,13 @@ const testimonials = [
             "{{ testimonial.quote }}"
           </p>
           <div class="flex items-center">
-            <img :src="testimonial.avatar" class="w-12 h-12 rounded-full">
+            <img
+              :src="testimonial.avatar"
+              :alt="`${testimonial.author}'s avatar`"
+              class="w-12 h-12 rounded-full"
+              @error="e => e.target.src = '/default-avatar.png'"
+              loading="lazy"
+            >
             <div class="ml-4">
               <h4 class="font-semibold text-gray-900 dark:text-white">
                 {{ testimonial.author }}

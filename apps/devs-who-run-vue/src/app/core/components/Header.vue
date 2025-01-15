@@ -20,12 +20,18 @@
           <a
             href="https://discord.gg/gjPdvKjFx3"
             class="px-8 py-3 font-semibold text-white bg-blue-600 rounded-md transition-all transform hover:-translate-y-1 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600"
+            rel="noopener noreferrer"
+            target="_blank"
+            aria-label="Join Our Discord Community (opens in new tab)"
           >
             Join Discord
             <i class="fa-brands fa-discord"></i>
           </a>
           <a
             href="https://github.com/Devs-Who-Run/devs-who-run"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Contribute on GitHub"
             class="px-8 py-3 font-semibold text-blue-600 bg-white rounded-md transition-all transform hover:-translate-y-1 hover:bg-gray-50 dark:bg-gray-800 dark:text-blue-400 dark:hover:bg-gray-700"
           >
             Contribute

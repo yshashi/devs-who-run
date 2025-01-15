@@ -31,11 +31,14 @@ const features = [
           Community Features
         </h2>
       </div>
-      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4"
+          role="list"
+          aria-label="Community features">
         <div
           v-for="feature in features"
           :key="feature.title"
           class="p-6 bg-white rounded-lg shadow-lg transition-all duration-300 transform dark:bg-gray-900 hover:-translate-y-1"
+          role="listitem"
         >
           <div class="mb-4 text-3xl">
             {{ feature.icon }}

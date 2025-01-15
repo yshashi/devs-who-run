@@ -46,14 +46,18 @@
             <li>
               <a
                 href="https://discord.gg/gjPdvKjFx3"
-                class="transition-colors hover:text-white"
-              >Discord</a>
+                class="inline-flex gap-1 items-center transition-colors hover:text-white"
+              >Discord
+                <i class="fa-brands fa-discord"></i>
+              </a>
             </li>
             <li>
               <a
                 href="https://github.com/Devs-Who-Run/devs-who-run"
-                class="transition-colors hover:text-white"
-              >GitHub</a>
+                class="inline-flex gap-1 items-center transition-colors hover:text-white"
+              >GitHub
+                <i class="fa-brands fa-github"></i>
+              </a>
             </li>
           </ul>
         </div>

@@ -8,7 +8,12 @@ import Testimonials from './core/components/Testimonials.vue';
 import Cta from './core/components/Cta.vue';
 import ThemeButton from './core/components/ThemeButton.vue';
 
-const isDarkMode = ref(window.matchMedia('(prefers-color-scheme: dark)').matches);
+const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+const isDarkMode = ref(mediaQuery.matches);
+mediaQuery.addEventListener('change', e => {
+  isDarkMode.value = e.matches;
+  document.documentElement.classList.toggle('dark', e.matches);
+});
 
 const toggleDarkMode = () => {
   isDarkMode.value = !isDarkMode.value;
