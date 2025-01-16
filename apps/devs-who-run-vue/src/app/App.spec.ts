@@ -5,6 +5,6 @@ import App from './App.vue';
 describe('App', () => {
   it('renders properly', async () => {
     const wrapper = mount(App, {});
-    expect(wrapper.text()).toContain('Code by Day, Run by Passion');
+    expect(wrapper.text()).toContain('Switch to dark mode Devs Who Run');
   });
 });
