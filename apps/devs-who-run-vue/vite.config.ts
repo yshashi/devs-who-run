@@ -34,6 +34,7 @@ export default defineConfig({
     environment: 'jsdom',
     include: ['src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
     reporters: ['default'],
+    setupFiles: ['setup.ts'],
     coverage: {
       reportsDirectory: '../../coverage/apps/devs-who-run-vue',
       provider: 'v8',
