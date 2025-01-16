@@ -14,7 +14,10 @@ defineProps<{
         </h1>
       </div>
 
-      <div id="hero" class="rounded">
+      <div
+        id="hero"
+        class="rounded"
+      >
         <div class="text-container">
           <h2>
             <svg
@@ -50,7 +53,10 @@ defineProps<{
 
       <div id="middle-content">
         <div id="middle-left-content">
-          <div id="learning-materials" class="rounded shadow">
+          <div
+            id="learning-materials"
+            class="rounded shadow"
+          >
             <h2>Learning materials</h2>
             <a
               href="https://nx.dev/getting-started/intro?utm_source=nx-project"
@@ -201,7 +207,7 @@ defineProps<{
           </div>
           <a
             id="nx-repo"
-            class="button-pill rounded shadow"
+            class="rounded shadow button-pill"
             href="https://github.com/nrwl/nx?utm_source=nx-project"
             target="_blank"
             rel="noreferrer"
@@ -225,7 +231,7 @@ defineProps<{
         <div id="other-links">
           <a
             id="nx-console"
-            class="button-pill rounded shadow"
+            class="rounded shadow button-pill"
             href="https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console&utm_source=nx-project"
             target="_blank"
             rel="noreferrer"
@@ -248,7 +254,7 @@ defineProps<{
           </a>
           <a
             id="nx-console-jetbrains"
-            class="button-pill rounded shadow"
+            class="rounded shadow button-pill"
             href="https://plugins.jetbrains.com/plugin/21060-nx-console"
             target="_blank"
             rel="noreferrer"
@@ -294,7 +300,10 @@ defineProps<{
               </span>
             </span>
           </a>
-          <div id="nx-cloud" class="rounded shadow">
+          <div
+            id="nx-cloud"
+            class="rounded shadow"
+          >
             <div>
               <svg
                 id="nx-cloud-logo"
@@ -330,7 +339,10 @@ defineProps<{
         </div>
       </div>
 
-      <div id="commands" class="rounded shadow">
+      <div
+        id="commands"
+        class="rounded shadow"
+      >
         <h2>Next steps</h2>
         <p>Here are some things you can do with Nx:</p>
         <details>
