@@ -1,4 +1,15 @@
 <script setup lang="ts">
+import { ref, onMounted } from 'vue';
+import { DiscordService } from '../services/discord.service';
+
+const discordStats = ref({
+  total_members: 0,
+  online_members: 0,
+});
+
+onMounted(async () => {
+  discordStats.value = await DiscordService.getServerStats();
+});
 </script>
 
 <template>
@@ -17,6 +28,36 @@
           Where code meets cardio - Join a community of developers who balance debugging with distance running
         </p>
         <div class="flex gap-x-6 justify-center mt-10">
+          <div class="flex gap-4 mb-6">
+            <div class="px-6 py-4 bg-white rounded-lg shadow-sm dark:bg-gray-800">
+              <div class="flex items-center">
+                <i class="mr-3 text-2xl text-blue-500 fa-solid fa-users" />
+                <div>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Total Members
+                  </p>
+                  <p class="text-2xl font-bold text-gray-900 dark:text-white">
+                    {{ discordStats.total_members }}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="px-6 py-4 bg-white rounded-lg shadow-sm dark:bg-gray-800">
+              <div class="flex items-center">
+                <i class="mr-3 text-2xl text-green-500 fa-solid fa-circle" />
+                <div>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    Online Now
+                  </p>
+                  <p class="text-2xl font-bold text-gray-900 dark:text-white">
+                    {{ discordStats.online_members }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-x-6 justify-center mt-4">
           <a
             href="https://discord.gg/gjPdvKjFx3"
             class="px-8 py-3 font-semibold text-white bg-blue-600 rounded-md transition-all transform hover:-translate-y-1 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600"
