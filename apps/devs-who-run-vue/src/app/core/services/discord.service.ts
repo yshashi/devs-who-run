@@ -9,9 +9,9 @@ export class DiscordService {
   private static readonly DISCORD_SERVER_ID = 'M85nWydE';
   private static readonly DISCORD_API_URL = `https://discord.com/api/v10/guilds/${DiscordService.DISCORD_SERVER_ID}/preview`;
 
-  /** currently using a temporary solution to fetch server stats with invites which will be valid for 7days
+  /** currently using a temporary solution to fetch server stats with invites
    will update it .net api once the deployment is done */
-  private static readonly INVITE_URL_FOR_STATS = 'https://discord.com/api/v9/invites/cmmqX6M9?with_counts=true';
+  private static readonly INVITE_URL_FOR_STATS = 'https://discord.com/api/v9/invites/mwRhMpR6fJ?with_counts=true';
 
   static async getServerStats(): Promise<DiscordStats> {
     try {
