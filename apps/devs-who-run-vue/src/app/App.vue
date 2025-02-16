@@ -35,12 +35,7 @@ onMounted(() => {
         :is-dark-mode="isDarkMode"
         @toggle="toggleDarkMode"
       />
-      <AppHeader />
-      <About />
-      <Feature />
-      <Testimonials />
-      <Cta />
-      <AppFooter />
+      <router-view />
     </div>
   </div>
 </template>

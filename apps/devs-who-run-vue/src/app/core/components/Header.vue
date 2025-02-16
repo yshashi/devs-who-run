@@ -1,11 +1,17 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
+import { useRouter } from 'vue-router';
 import { DiscordService } from '../services/discord.service';
 
+const router = useRouter();
 const discordStats = ref({
   total_members: 0,
   online_members: 0,
 });
+
+const navigateToLogin = () => {
+  router.push('/login');
+};
 
 onMounted(async () => {
   discordStats.value = await DiscordService.getServerStats();
@@ -78,6 +84,15 @@ onMounted(async () => {
             Contribute
             <i class="fa-brands fa-github" />
           </a>
+        </div>
+        <div class="flex justify-center mt-8">
+          <button
+            class="px-8 py-3 text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 rounded-md shadow-lg transition-all transform hover:-translate-y-1 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:from-blue-500 dark:to-indigo-500"
+            @click="navigateToLogin"
+          >
+            Join Our Community
+            <i class="ml-2 fas fa-arrow-right" />
+          </button>
         </div>
       </div>
     </div>
